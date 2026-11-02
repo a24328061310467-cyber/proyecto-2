@@ -1,0 +1,97 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz cósmico | COSMOS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <header class="site-header">
+        <a class="logo" href="index.html">✦ COSMOS</a>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="sistema-solar.html">Sistema solar</a>
+            <a href="galaxias.html">Galaxias</a>
+            <a href="agujeros-negros.html">Agujeros negros</a>
+            <a href="origen-universo.html">Origen</a>
+            <a href="vida-extraterrestre.html">Vida</a>
+            <a href="materia-oscura.html">Materia oscura</a>
+            <a href="quiz.html" class="active">Quiz</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <span class="eyebrow">PON A PRUEBA TU CURIOSIDAD</span>
+            <h1>QUIZ <span>CÓSMICO</span></h1>
+            <p>
+                ¿Cuánto sabes sobre los secretos del universo?
+                Responde las preguntas y descubre tu resultado.
+            </p>
+        </section>
+
+        <section class="section quiz-section">
+            <div class="quiz-container">
+
+                <div class="quiz-top">
+                    <span id="question-counter">Pregunta 1 de 10</span>
+                    <span id="quiz-score">Puntos: 0</span>
+                </div>
+
+                <div class="quiz-progress">
+                    <div id="progress-bar"></div>
+                </div>
+
+                <h2 id="question">Preparando pregunta...</h2>
+
+                <div id="answers" class="quiz-answers">
+                    <!-- Las respuestas se generan con JavaScript -->
+                </div>
+
+                <p id="feedback" class="quiz-feedback"></p>
+
+                <button id="next-button" class="btn btn-primary" disabled>
+                    Siguiente pregunta →
+                </button>
+
+                <div id="quiz-result" class="quiz-result hidden">
+                    <h2>¡Quiz completado!</h2>
+                    <p id="result-message"></p>
+                    <p id="final-score"></p>
+
+                    <button id="restart-button" class="btn btn-primary">
+                        Intentar nuevamente
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <h2>El universo todavía guarda secretos</h2>
+            <p>Continúa explorando y descubre nuevos misterios.</p>
+            <a href="index.html" class="btn btn-secondary">
+                Volver al inicio
+            </a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year">2026</span> COSMOS | Los secretos del universo</p>
+        <a href="index.html">Volver al inicio ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
